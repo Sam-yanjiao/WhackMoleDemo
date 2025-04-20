@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forest_green">
+
+    <!-- Add this inside your RelativeLayout -->
+    <FrameLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"/>
+    <!-- Score TextView -->
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="124dp"
+        android:text="Score: 0"
+        android:textColor="@color/soft_beige"
+        android:textSize="18sp"/>
+
+    <!-- Timer TextView -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="124dp"
+        android:text="Time: 60s"
+        android:textColor="@color/soft_beige"
+        android:textSize="18sp"/>
+
+    <!-- Mole Grid -->
+
+    <!-- Button Container -->
+
+    <GridLayout
+        android:id="@+id/moleGrid"
+        android:layout_width="276dp"
+        android:layout_height="409dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@id/scoreTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="41dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:rowCount="4">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowSpan="4"
+            android:layout_columnSpan="4" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@color/warm_brown"
+            android:text="@string/pause_replay"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/warm_brown"
+            android:text="@string/home"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

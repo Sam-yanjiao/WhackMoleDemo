@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WhackMole</string>
+    <string name="play_again">Play Again</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="game_over">Game Over!</string>
+    <string name="game_title">WhackMole</string>
+    <string name="play_game">Play Game</string>
+    <string name="high_score_0">High Score: 0</string>
+    <string name="score_0">Score: 0</string>
+    <string name="time_60s">Time: 60s</string>
+    <string name="pause_replay">Pause/Replay</string>
+    <string name="home">Home</string>
+    <string name="sound_setting">Sound Effects</string>
+    <string name="leaderboard_title">Leaderboard</string>
+
+    <string name="settings_title">Settings</string>
+
+    <string name="_1">1.</string>
+    <string name="_100">100</string>
+    <string name="pause">Pause/Replay</string>
+
+
+</resources>

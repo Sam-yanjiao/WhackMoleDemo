@@ -1,0 +1,43 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    tools:ignore="ExtraText">
+
+    <!-- Mole Body (dark rounded shape) -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M12,3c-5,0-9,4-9,9s4,9 9,9 9,-4 9,-9 -4,-9 -9,-9z"/>
+
+    <!-- Nose -->
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M12,12l-2,2h4z"/>
+
+    <!-- White Eyes (2x2 units) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,8h2v2h-2z"/> <!-- Left eye -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,8h2v2h-2z"/> <!-- Right eye -->
+
+    <!-- Centered Black Pupils (1x1 units) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M9,9h1v1h-1z"/> <!-- Left pupil -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M17,9h1v1h-1z"/> <!-- Right pupil -->
+    <!-- Claws (three lines on each side) -->
+    <path
+        android:strokeColor="#3E2723"
+        android:strokeWidth="0.5"
+        android:pathData="M4,14l1.5,-1.5M4,15l1.5,-0.5M4,16l1.5,0.5"/>
+    <path
+        android:strokeColor="#3E2723"
+        android:strokeWidth="0.5"
+        android:pathData="M20,14l-1.5,-1.5M20,15l-1.5,-0.5M20,16l-1.5,0.5"/>
+</vector>

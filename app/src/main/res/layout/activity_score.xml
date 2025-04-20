@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forest_green">
+
+    <TextView
+        android:id="@+id/scoreTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_over"
+        android:textSize="24sp"
+        android:textColor="@color/soft_beige"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/finalScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_0"
+        android:textSize="20sp"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/scoreTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/playerNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/finalScoreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your name"
+        android:textColor="@color/soft_beige"
+        android:textColorHint="@color/soft_beige"
+        android:backgroundTint="@color/soft_beige"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/saveScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Score"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/playerNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Leaderboard"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/saveScoreButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/leaderboardButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_menu"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/playAgainButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

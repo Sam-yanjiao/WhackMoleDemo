@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forest_green">
+
+    <TextView
+        android:id="@+id/scoreTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="555dp"
+        android:text="@string/game_over"
+        android:textColor="@color/soft_beige"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/finalScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/scoreTitleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-461dp"
+        android:text="@string/score_0"
+        android:textColor="@color/soft_beige"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/playerNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="303dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="217dp"
+        android:backgroundTint="@color/soft_beige"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:textColor="@color/soft_beige"
+        android:textColorHint="@color/soft_beige" />
+
+    <Button
+        android:id="@+id/saveScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Score"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/playerNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Leaderboard"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/saveScoreButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/leaderboardButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_menu"
+        android:background="@color/warm_brown"
+        android:textColor="@color/soft_beige"
+        android:layout_below="@id/playAgainButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
